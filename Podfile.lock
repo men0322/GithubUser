@@ -1,0 +1,94 @@
+PODS:
+  - Action (5.0.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - Alamofire (5.9.1)
+  - CwlCatchException (2.2.1):
+    - CwlCatchExceptionSupport (~> 2.2.1)
+  - CwlCatchExceptionSupport (2.2.1)
+  - CwlMachBadInstructionHandler (2.2.2)
+  - CwlPosixPreconditionTesting (2.2.2)
+  - CwlPreconditionTesting (2.2.2):
+    - CwlCatchException (~> 2.2.1)
+    - CwlMachBadInstructionHandler (~> 2.2.2)
+    - CwlPosixPreconditionTesting (~> 2.2.2)
+  - Differentiator (5.0.0)
+  - Nimble (13.5.0):
+    - CwlPreconditionTesting (~> 2.2.0)
+  - ObjectMapper (4.4.2)
+  - Quick (5.0.1)
+  - R.swift (7.7.0)
+  - RxCocoa (6.8.0):
+    - RxRelay (= 6.8.0)
+    - RxSwift (= 6.8.0)
+  - RxDataSources (5.0.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxOptional (5.0.6):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.8.0):
+    - RxSwift (= 6.8.0)
+  - RxSwift (6.8.0)
+  - SDWebImage (5.19.7):
+    - SDWebImage/Core (= 5.19.7)
+  - SDWebImage/Core (5.19.7)
+
+DEPENDENCIES:
+  - Action
+  - Alamofire (~> 5.9.1)
+  - Nimble
+  - ObjectMapper
+  - Quick (~> 5.0.1)
+  - R.swift
+  - RxCocoa
+  - RxDataSources
+  - RxOptional
+  - RxSwift (~> 6)
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - Action
+    - Alamofire
+    - CwlCatchException
+    - CwlCatchExceptionSupport
+    - CwlMachBadInstructionHandler
+    - CwlPosixPreconditionTesting
+    - CwlPreconditionTesting
+    - Differentiator
+    - Nimble
+    - ObjectMapper
+    - Quick
+    - R.swift
+    - RxCocoa
+    - RxDataSources
+    - RxOptional
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Action: 47f1825511907b4fcd79dd7a7db9526c20f78018
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  CwlCatchException: 7acc161b299a6de7f0a46a6ed741eae2c8b4d75a
+  CwlCatchExceptionSupport: 54ccab8d8c78907b57f99717fb19d4cc3bce02dc
+  CwlMachBadInstructionHandler: dae4fdd124d45c9910ac240287cc7b898f4502a1
+  CwlPosixPreconditionTesting: ecd095aa2129e740b44301c34571e8d85906fb88
+  CwlPreconditionTesting: 67a0047dd4de4382b93442c0e3f25207f984f35a
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  Nimble: cc0469644d253140c6bab7e88d4ee3bbed59a25c
+  ObjectMapper: e6e4d91ff7f2861df7aecc536c92d8363f4c9677
+  Quick: 749aa754fd1e7d984f2000fe051e18a3a9809179
+  R.swift: 33e7082885d0c0bac7ae20ef7d2845a6a920ca11
+  RxCocoa: 2d33c1e1e5d66492052ad46b11024ae287572880
+  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxOptional: 337ba615992ffdeffea02d6a5a242358757bbfcd
+  RxRelay: 335c78b926a2aea8d863a6d25f1ed3b5ad8e8705
+  RxSwift: 4e28be97cbcfeee614af26d83415febbf2bf6f45
+  SDWebImage: 8a6b7b160b4d710e2a22b6900e25301075c34cb3
+
+PODFILE CHECKSUM: 0005a4e7087ea1474a51aaf75a746b012b036445
+
+COCOAPODS: 1.16.2
