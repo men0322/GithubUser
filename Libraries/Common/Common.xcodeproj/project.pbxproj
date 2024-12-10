@@ -12,6 +12,7 @@
 		0EA36BE82D06F68D00192188 /* UserDefaultWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36BE72D06F68D00192188 /* UserDefaultWrapper.swift */; };
 		0EA36BEB2D074C5400192188 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36BEA2D074C5400192188 /* Coordinator.swift */; };
 		0EA36C1A2D07FDEE00192188 /* ScrollView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36C192D07FDEE00192188 /* ScrollView+Rx.swift */; };
+		0EA36C272D081DCF00192188 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA36C262D081DCF00192188 /* UIView+Shadow.swift */; };
 		0EAECBA92D06D09F00152811 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAECBA22D06D09E00152811 /* ViewModelType.swift */; };
 		0EAECBAC2D06D09F00152811 /* UseCaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAECBA62D06D09E00152811 /* UseCaseType.swift */; };
 		0EAECBAD2D06D09F00152811 /* CTActionUseCaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAECBA72D06D09E00152811 /* CTActionUseCaseType.swift */; };
@@ -25,6 +26,7 @@
 		0EA36BE72D06F68D00192188 /* UserDefaultWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultWrapper.swift; sourceTree = "<group>"; };
 		0EA36BEA2D074C5400192188 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		0EA36C192D07FDEE00192188 /* ScrollView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScrollView+Rx.swift"; sourceTree = "<group>"; };
+		0EA36C262D081DCF00192188 /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
 		0EAECBA22D06D09E00152811 /* ViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		0EAECBA62D06D09E00152811 /* UseCaseType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseType.swift; sourceTree = "<group>"; };
 		0EAECBA72D06D09E00152811 /* CTActionUseCaseType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTActionUseCaseType.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			children = (
 				0EA36BDE2D06F28200192188 /* Observable+bind.swift */,
 				0EA36C192D07FDEE00192188 /* ScrollView+Rx.swift */,
+				0EA36C262D081DCF00192188 /* UIView+Shadow.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				0EA36BEB2D074C5400192188 /* Coordinator.swift in Sources */,
 				0EA36BDF2D06F28200192188 /* Observable+bind.swift in Sources */,
 				0EAECBAC2D06D09F00152811 /* UseCaseType.swift in Sources */,
+				0EA36C272D081DCF00192188 /* UIView+Shadow.swift in Sources */,
 				0EAECBAD2D06D09F00152811 /* CTActionUseCaseType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +269,7 @@
 		0E2A8E6D2D0055BA001D72F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -331,6 +336,7 @@
 		0E2A8E6E2D0055BA001D72F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -391,6 +397,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AFFFB2B2745A5D2E84BF4C59 /* Pods-Libraries-Common.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -423,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55AF94A51F75BECE91AD63B0 /* Pods-Libraries-Common.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

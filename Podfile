@@ -45,13 +45,17 @@ target 'GitHubUser' do
   network
   
   target 'GitHubUserTests' do
+    project 'GitHubUser.xcodeproj'
     inherit! :search_paths
     testing
+    rx
   end
+  
+end
 
-  target 'GitHubUserUITests' do
-  end
 
+
+target 'GitHubUserUITests' do
 end
 
 abstract_target 'AppFeatures' do

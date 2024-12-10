@@ -8,6 +8,7 @@
 import UIKit
 import DesignSystem
 import SDWebImage
+import Common
 
 struct UserInfoViewCellModel {
     let avatarUrl: URL?
@@ -40,9 +41,12 @@ final class UserInfoTableViewCell: UITableViewCell {
     @IBOutlet private weak var linkView: UIView!
     @IBOutlet private weak var linkTextView: UITextView!
     @IBOutlet private weak var userNameLabel: DSLabel!
+    @IBOutlet private weak var customBackgroundView: UIView!
+    @IBOutlet private weak var shadowBackgroundView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        configureUI()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -53,7 +57,11 @@ final class UserInfoTableViewCell: UITableViewCell {
         userNameLabel.setStyle(DS.TitleLarge())
         userNameLabel.setStyle(DS.BodyLarge())
         
-        avatarImageView.layer.cornerRadius = 10
+        avatarImageView.layer.cornerRadius = 40
+        
+        customBackgroundView.layer.cornerRadius = 8
+        shadowBackgroundView.layer.cornerRadius = 8
+        shadowBackgroundView.setShadowStyle(.shadow4)
     }
     
     var model: UserInfoViewCellModel? {
