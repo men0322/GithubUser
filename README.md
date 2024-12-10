@@ -8,7 +8,7 @@ Dependencies in this project are provided via Cocoapods. Please install all depe
 pod install
 `
 
-#### Module
+#### Modularization
 UserProfile: Provide github features
 
 Common: Provide you with commons
