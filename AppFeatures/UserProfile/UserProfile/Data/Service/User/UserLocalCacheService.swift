@@ -18,7 +18,7 @@ protocol UserLocalCacheServiceType {
         user: User
     )
     
-    func getLocalCacheUsers() -> Observable<[User]>
+    func getLocalCacheUsers() -> Observable<(DataType, [User])>
     
     func getLocalCacheUserDetail(
         login: String
@@ -48,13 +48,13 @@ struct UserLocalCacheService: UserLocalCacheServiceType {
         }
     }
     
-    func getLocalCacheUsers() -> Observable<[User]> {
+    func getLocalCacheUsers() -> Observable<(DataType, [User])> {
         guard let data = UserDefaults.standard.data(forKey: UserLocalCacheKeys.usersLocalCacheKey),
               let users = try? JSONDecoder().decode([User].self, from: data) else {
-            return Observable.just([])
+            return Observable.just((DataType.remote, []))
         }
         
-        return .just(users)
+        return .just((DataType.remote, users))
     }
     
     func getLocalCacheUserDetail(
