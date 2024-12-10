@@ -20,6 +20,7 @@ Localize: Provide localization
 
 ## High level overview
 
+### Clean Architecture :
 #### Domain 
 
 
@@ -33,6 +34,20 @@ The `Data` is a concrete implementation of the `Domain` in a specific platform l
 `Presentation` is responsible for delivering information to the user and handling user input. It can be implemented with any delivery pattern e.g (MVVM, MVC, MVP). This is the place for your `UIView`s and `UIViewController`s. As you will see from the example app, `ViewControllers` are completely independent of the `Platform`.  The only responsibility of a view controller is to "bind" the UI to the Domain to make things happen. In fact, in the current example we are using the same view controller for Realm and CoreData.
  
 To enforce modularity, `Domain`, `Data` and `Presentation` are separate targets in the App, which allows us to take advantage of the `internal` access layer in Swift to prevent exposing of types that we don't want to expose.
+
+### MVVM:
+Use output input with delegate to increase binding
+
+### Caching:
+Using `UserDefaults` if have time can use `Realm` or `CoreData`
+Show cache first then call api then update layout again
+
+### Router:
+Using Coordinator
+
+### Dependency Injection
+Using Assembler
+
 
 ### TESTING:
 Using `Qick` and `Nimble`
