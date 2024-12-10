@@ -13,6 +13,8 @@ UserProfile: Provide github features
 
 Common: Provide you with commons
 
+ApiClient:
+
 DesignSystem: Provide Font, text, style, Colors...
 
 Localize: Provide localization
