@@ -7,6 +7,7 @@ Dependencies in this project are provided via Cocoapods. Please install all depe
 `
 pod install
 `
+## High level overview
 
 #### Modularization
 UserProfile: Provide github features
@@ -18,9 +19,6 @@ ApiClient:
 DesignSystem: Provide Font, text, style, Colors...
 
 Localize: Provide localization
-
-
-## High level overview
 
 ### Clean Architecture :
 #### Domain 
