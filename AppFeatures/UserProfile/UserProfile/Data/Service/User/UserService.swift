@@ -23,7 +23,7 @@ protocol UserServiceType {
     func getUsers(
         perPage: Int, 
         since: Int
-    ) -> Observable<[User]>
+    ) -> Observable<(DataType, [User])>
     
     /// Fetches a single user's details by their login username.
         ///
@@ -57,13 +57,14 @@ struct UserService: UserServiceType {
     func getUsers(
         perPage: Int,
         since: Int
-    ) -> Observable<[User]> {
+    ) -> Observable<(DataType, [User])> {
         UserTargets
             .FetchUsersTarget(
                 perPage: perPage,
                 since: since
             )
             .execute()
+            .map { (DataType.remote, $0)}
             .observe(on: resultScheduler)
     }
     

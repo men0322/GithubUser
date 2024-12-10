@@ -24,6 +24,7 @@ extension User {
         htmlUrlString <- map["html_url"]
         followers <- map["followers"]
         following <- map["following"]
+        location <- map["location"]
     }
     
     /// A computed property that converts the `avatarUrlString` to a `URL` object.

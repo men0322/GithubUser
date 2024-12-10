@@ -42,3 +42,8 @@ struct User: Equatable, Codable, Mappable {
     /// - Parameter map: The `Map` object provided by ObjectMapper to map JSON data to the model's properties.
     public init?(map: Map) {}
 }
+
+enum DataType {
+    case local
+    case remote
+}

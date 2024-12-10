@@ -12,7 +12,7 @@ protocol UserRepositoryType {
     func getUsers(
         perPage: Int,
         since: Int
-    ) -> Observable<[User]>
+    ) -> Observable<(DataType, [User])>
     
     func getUser(
         login: String

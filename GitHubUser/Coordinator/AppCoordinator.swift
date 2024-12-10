@@ -22,7 +22,7 @@ class AppCoordinator: Coordinator {
     }
 
     private func showUsersView() {
-        let usersCoordinator = UserProfileCoordinator(
+        let usersCoordinator = UsersCoordinator(
             navigationController: navigationController,
             parentCoordinator: self
         )

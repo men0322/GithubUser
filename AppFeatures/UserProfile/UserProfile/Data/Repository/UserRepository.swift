@@ -24,7 +24,7 @@ struct UserRepository: UserRepositoryType {
     func getUsers(
         perPage: Int,
         since: Int
-    ) -> Observable<[User]> {
+    ) -> Observable<(DataType, [User])> {
         let localUsers = localUserService
             .getLocalCacheUsers()
         
@@ -33,7 +33,8 @@ struct UserRepository: UserRepositoryType {
                 perPage: perPage,
                 since: since
             )
-            .do { users in
+            .do { arg in
+                let (_, users) = arg
                 self.localUserService
                     .saveUsersToLocal(
                         users: users

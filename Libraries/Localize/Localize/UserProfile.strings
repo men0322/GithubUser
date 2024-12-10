@@ -5,3 +5,10 @@
   Created by Hung Nguyen on 09/12/2024.
   
 */
+
+
+"users.navigation.title" = "Github Users";
+"user.navigation.title" = "User Detail";
+"user.follower.title" = "Follower";
+"user.following.title" = "Following";
+"user.block.title" = "Blog";

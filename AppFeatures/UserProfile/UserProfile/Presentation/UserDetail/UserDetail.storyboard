@@ -12,13 +12,28 @@
         <!--User Detail View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="UserDetailViewController" customModule="UserProfile" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserDetailViewController" id="Y6W-OH-hqX" customClass="UserDetailViewController" customModule="UserProfile" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UjA-4l-eH0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="UjA-4l-eH0" secondAttribute="bottom" id="2me-wA-Q4Y"/>
+                            <constraint firstItem="UjA-4l-eH0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="91z-9B-E5X"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UjA-4l-eH0" secondAttribute="trailing" id="9fH-Z0-icv"/>
+                            <constraint firstItem="UjA-4l-eH0" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="gb9-X1-eyH"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="UjA-4l-eH0" id="kSz-nw-c5Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,7 +11,8 @@ protocol Assembler: AnyObject,
                     ViewControllerAssembler,
                     ViewModelAssembler,
                     RepositoryAssembler,
-                    ServiceAssembler {
+                    ServiceAssembler,
+                    UseCaseAssembler {
     
 }
 

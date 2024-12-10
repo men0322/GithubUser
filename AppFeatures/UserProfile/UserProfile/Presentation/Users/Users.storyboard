@@ -16,9 +16,38 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fjf-Uk-sOg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="xSL-MZ-Tu9">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="aM9-Cf-uoO">
+                                            <rect key="frame" x="197" y="12" width="20" height="20"/>
+                                        </activityIndicatorView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="aM9-Cf-uoO" firstAttribute="centerX" secondItem="xSL-MZ-Tu9" secondAttribute="centerX" id="Hic-Cn-536"/>
+                                        <constraint firstItem="aM9-Cf-uoO" firstAttribute="centerY" secondItem="xSL-MZ-Tu9" secondAttribute="centerY" id="laU-rb-fgS"/>
+                                    </constraints>
+                                </view>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="fjf-Uk-sOg" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="7eG-Xj-Npb"/>
+                            <constraint firstItem="fjf-Uk-sOg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="EmW-Rj-2aL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fjf-Uk-sOg" secondAttribute="trailing" id="Nxk-La-FPt"/>
+                            <constraint firstAttribute="bottom" secondItem="fjf-Uk-sOg" secondAttribute="bottom" id="owy-jP-D3E"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="fjf-Uk-sOg" id="84T-QJ-NIP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -26,6 +55,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

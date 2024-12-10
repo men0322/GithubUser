@@ -9,14 +9,14 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-extension ObservableType where Element == Bool {
+public extension ObservableType where Element == Bool {
     /// Boolean not operator
     public func not() -> Observable<Bool> {
         return self.map(!)
     }
 }
 
-extension ObservableType {
+public extension ObservableType {
 
     /**
      Invokes an action for each Next event in the observable sequence, and propagates all observer messages through the result sequence.
@@ -87,7 +87,7 @@ extension ObservableType {
 
 // MARK: - RxCocoa
 
-extension SharedSequenceConvertibleType where SharingStrategy == DriverSharingStrategy {
+public extension SharedSequenceConvertibleType where SharingStrategy == DriverSharingStrategy {
 
     /**
      Invokes an action for each Next event in the observable sequence, and propagates all observer messages through the result sequence.
@@ -135,7 +135,7 @@ extension SharedSequenceConvertibleType where SharingStrategy == DriverSharingSt
 }
 
 // MARK: - ObservableType Extensions
-extension ObservableType {
+public extension ObservableType {
 
     /// Filters out `nil` values from an observable sequence and unwraps optional values.
     /// - Returns: An observable sequence containing only the non-nil elements of the original sequence.
@@ -198,7 +198,7 @@ extension ObservableType {
 }
 
 // MARK: - SharedSequenceConvertibleType Extensions
-extension SharedSequenceConvertibleType {
+public extension SharedSequenceConvertibleType {
     
     /// Maps all elements in the shared sequence to `Void`.
     /// - Returns: A shared sequence of type `Void`.
